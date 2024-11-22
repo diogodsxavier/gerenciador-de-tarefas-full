@@ -1,5 +1,6 @@
 import { useNavigate, useSearchParams } from "react-router-dom";
 import Title from "../components/Title";
+import { ChevronLeft } from "lucide-react";
 
 function TaskPage() {
   const navigate = useNavigate();
@@ -13,7 +14,7 @@ function TaskPage() {
 
         <div className="flex justify-center relative mb-6">
           <button onClick={() => navigate(-1)} className="absolute left-0 top-0 bottom-0 text-slate-100">
-            voltar
+            <ChevronLeft />
           </button>
 
           <Title>Detalhes da Tarefa</Title>
